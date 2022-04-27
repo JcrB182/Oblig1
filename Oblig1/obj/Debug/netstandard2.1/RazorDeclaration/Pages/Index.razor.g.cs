@@ -84,7 +84,7 @@ using Oblig1.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 27 "C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\Pages\Index.razor"
+#line 30 "C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\Pages\Index.razor"
        
     List<string> animalEmoji = new List<string>()
     {
@@ -109,6 +109,28 @@ using Oblig1.Shared;
     {
         Random random = new Random();
         shuffledAnimals = animalEmoji.OrderBy(item => random.Next()).ToList();
+    }
+
+    string lastAnimalFound = string.Empty;
+    string lastDescription = string.Empty;
+
+    private void ButtonClick(string animal, string animalDescription)
+    {
+        if (lastAnimalFound == string.Empty)
+        {
+            lastAnimalFound = animal;
+            lastDescription = animalDescription;
+        }
+        else if ((lastAnimalFound == animal) && (animalDescription != lastDescription))
+        {
+            lastAnimalFound = string.Empty;
+
+            shuffledAnimals = shuffledAnimals.Select(a => a.Replace(animal, string.Empty)).ToList();
+        }
+        else
+        {
+            lastAnimalFound = string.Empty;
+        }
     }
 
 #line default

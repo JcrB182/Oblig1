@@ -355,6 +355,6 @@ C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023
 C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\Oblig1.csproj.CopyComplete
 C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\Oblig1.dll
 C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\Oblig1.pdb
-C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\integrity\Erki4jhxGUOSnZnsJD6FMZehMGx_FhFiuQL-3eztOEs=.hash
-C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\integrity\TLeXkbm8wPawETwcuuQbisU-9qbrdhbaeryNiAAgifg=.hash
-C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\integrity\ibH5CkcO6p7hSZTDVznvH8hceYdjd-zhm3QgGLmgWgs=.hash
+C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\integrity\TRmZ5YfhOuSk-vgtYZU8iYPkUk42N3cXBOmGWjW0Sfo=.hash
+C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\integrity\ka66mgCpeemGxRmE_O4bRE2fkDGS8W0AYhR-E93bTzw=.hash
+C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\obj\Debug\netstandard2.1\integrity\MvaqmY7byKWiz9l-_KyKLU9CBzBY6Jhnmhj7Hfw3r14=.hash
