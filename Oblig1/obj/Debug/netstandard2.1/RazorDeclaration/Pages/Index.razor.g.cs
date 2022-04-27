@@ -83,6 +83,37 @@ using Oblig1.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 27 "C:\Users\ogroe\Documents\USN Bakkenteigen\Dataingeniør cybersikkerhet 2020-2023\4. semester\Programvareutvikling\Oblig1\Oblig1\Pages\Index.razor"
+       
+    List<string> animalEmoji = new List<string>()
+    {
+        "🐴", "🐴",
+        "🦄", "🦄",
+        "🐖", "🐖",
+        "🦍", "🦍",
+        "🐄", "🐄",
+        "🐓", "🐓",
+        "🐢", "🐢",
+        "🐫", "🐫",
+    };
+
+    List<string> shuffledAnimals = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        SetUpGame();
+    }
+
+    private void SetUpGame()
+    {
+        Random random = new Random();
+        shuffledAnimals = animalEmoji.OrderBy(item => random.Next()).ToList();
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

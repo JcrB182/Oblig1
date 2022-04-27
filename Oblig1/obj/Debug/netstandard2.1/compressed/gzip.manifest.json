@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\rVr0WV9YTMUkXkUorBc-FS6WZ_rZ4Jr2BXXlvEJgtg0=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Erki4jhxGUOSnZnsJD6FMZehMGx_FhFiuQL-3eztOEs=.hash",
       "Source": "C:\\Users\\ogroe\\Documents\\USN Bakkenteigen\\Dataingeniør cybersikkerhet 2020-2023\\4. semester\\Programvareutvikling\\Oblig1\\Oblig1\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Oblig1.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Oblig1.dll.gz"
     },
@@ -261,7 +261,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\nnq1vlqQbQPoIye_U_WoRZ4BX7SF5Mr_ffvOwhWZk4k=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\TLeXkbm8wPawETwcuuQbisU-9qbrdhbaeryNiAAgifg=.hash",
       "Source": "C:\\Users\\ogroe\\Documents\\USN Bakkenteigen\\Dataingeniør cybersikkerhet 2020-2023\\4. semester\\Programvareutvikling\\Oblig1\\Oblig1\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Oblig1.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Oblig1.pdb.gz"
     },
@@ -286,7 +286,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\wWxRYVjbaBX6HWI7RmPfC7n_cg4nJDCwCiPkhcMPhJQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ibH5CkcO6p7hSZTDVznvH8hceYdjd-zhm3QgGLmgWgs=.hash",
       "Source": "C:\\Users\\ogroe\\Documents\\USN Bakkenteigen\\Dataingeniør cybersikkerhet 2020-2023\\4. semester\\Programvareutvikling\\Oblig1\\Oblig1\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }
