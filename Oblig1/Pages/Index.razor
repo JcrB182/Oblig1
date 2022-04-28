@@ -47,6 +47,30 @@
         "🐫", "🐫",
     };
 
+    List<string> flagEmoji = new List<string>()
+    {
+        "🏴‍☠️","🏴‍☠️",
+        "🇧🇻", "🇧🇻",
+        "🇨🇦", "🇨🇦",
+        "🇬🇵", "🇬🇵",
+        "🇱🇨", "🇱🇨",
+        "🇷🇴", "🇷🇴",
+        "🇹🇰", "🇹🇰",
+        "🏳️‍🌈", "🏳️‍🌈",
+    };
+
+    List<string> fruitEmoji = new List<string>()
+    {
+        "🍇", "🍇",
+        "🥝", "🥝",
+        "🍍", "🍍",
+        "🍉", "🍉",
+        "🍎", "🍎",
+        "🍏", "🍏",
+        "🍓", "🍓",
+        "🥭", "🥭",
+    };
+
     List<string> shuffledAnimals = new List<string>();
     int matchesFound = 0;
     Timer timer;
@@ -64,7 +88,7 @@
     private void SetUpGame()
     {
         Random random = new Random();
-        shuffledAnimals = animalEmoji.OrderBy(item => random.Next()).ToList();
+        shuffledAnimals = pickAList().OrderBy(item => random.Next()).ToList();
 
         matchesFound = 0;
         tenthsOfSecondsElapsed = 0;
@@ -103,12 +127,34 @@
         }   
     }
     private void Timer_Tick(Object source, ElapsedEventArgs e)
+    {
+        InvokeAsync(() =>
         {
-            InvokeAsync(() =>
-            {
-                tenthsOfSecondsElapsed++;
-                timeDisplay = (tenthsOfSecondsElapsed / 10F).ToString("0.0s");
-                StateHasChanged();
-            });
+            tenthsOfSecondsElapsed++;
+            timeDisplay = (tenthsOfSecondsElapsed / 10F).ToString("0.0s");
+            StateHasChanged();
+        });
+    }
+
+    private List<string> pickAList()
+    {
+        Random random = new Random();
+        var list = new List<string>();
+
+        switch (random.Next(3))
+        {
+            case 0:
+                list = animalEmoji;
+                break;
+
+            case 1:
+                list = flagEmoji;
+                break;
+
+            case 2:
+                list = fruitEmoji;
+                break;
         }
+        return list;
+    }
 }
