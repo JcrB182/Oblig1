@@ -18,6 +18,10 @@
     }
 </style>
 <div class="container">
+     <div class="row">
+        <h2>@gameResult</h2>
+    </div>
+
     <div class="row">
         @for (var animalNumber = 0; animalNumber < shuffledAnimals.Count; animalNumber++)
        {
@@ -32,7 +36,7 @@
        }
     </div>
 
-    <div class="col-3">
+    <div class="row">
         <button class="btn btn-outline-dark" id=startButton type="button" @onclick="@(() => StartGame())">
             <h3>Start spillet</h3>
         </button>
@@ -44,6 +48,7 @@
     <div class="row">
         <h2>Time: @timeDisplay</h2>
     </div>
+    
 </div>
 
 @code {
@@ -88,6 +93,7 @@
     Timer timer;
     int tenthsOfSecondsElapsed = 0;
     string timeDisplay;
+    string gameResult;
 
     protected override void OnInitialized()
     {
@@ -110,6 +116,7 @@
     {
         timer.Start();
         SetUpGame();
+        gameResult = "";
     }
 
 
@@ -134,6 +141,7 @@
             {
                 timer.Stop();
                 timeDisplay += " - Play Again?";
+                gameResult = "Game Completed";
             }
         }
         else
@@ -154,7 +162,7 @@
             {
                 timer.Stop();
                 timeDisplay = " - Play Again?";
-                
+                gameResult = "Game Over";
             }
             StateHasChanged();
         });
