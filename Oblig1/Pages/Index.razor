@@ -11,6 +11,11 @@
         height: 100px;
         font-size: 50px;
     }
+
+    #startButton {
+        width: 300px;
+        height: 75px;
+    }
 </style>
 <div class="container">
     <div class="row">
@@ -26,6 +31,13 @@
            </div>
        }
     </div>
+
+    <div class="col-3">
+        <button class="btn btn-outline-dark" id=startButton type="button" @onclick="@(() => StartGame())">
+            <h3>Start spillet</h3>
+        </button>
+    </div>
+
     <div class="row">
         <h2>Matches found: @matchesFound</h2>
     </div>
@@ -91,8 +103,15 @@
         shuffledAnimals = pickAList().OrderBy(item => random.Next()).ToList();
 
         matchesFound = 0;
-        tenthsOfSecondsElapsed = 0;
+        tenthsOfSecondsElapsed = 200;
     }
+
+    private void StartGame()
+    {
+        timer.Start();
+        SetUpGame();
+    }
+
 
     string lastAnimalFound = string.Empty;
     string lastDescription = string.Empty;
@@ -103,8 +122,6 @@
         {
             lastAnimalFound = animal;
             lastDescription = animalDescription;
-
-            timer.Start();
         }
         else if ((lastAnimalFound == animal) && (animalDescription != lastDescription))
         {
@@ -117,8 +134,6 @@
             {
                 timer.Stop();
                 timeDisplay += " - Play Again?";
-
-                SetUpGame();
             }
         }
         else
@@ -130,8 +145,17 @@
     {
         InvokeAsync(() =>
         {
-            tenthsOfSecondsElapsed++;
-            timeDisplay = (tenthsOfSecondsElapsed / 10F).ToString("0.0s");
+            if (tenthsOfSecondsElapsed > 0)
+            {
+                tenthsOfSecondsElapsed--;
+                timeDisplay = (tenthsOfSecondsElapsed / 10F).ToString("0.0s");
+            }
+            else
+            {
+                timer.Stop();
+                timeDisplay = " - Play Again?";
+                
+            }
             StateHasChanged();
         });
     }
